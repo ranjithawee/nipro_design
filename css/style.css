@@ -1,0 +1,716 @@
+/* font family start */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* font family end */
+.container{
+    /* border: 1px solid; */
+}
+
+/* common css */
+:root{
+    --lato: "Lato", sans-serif;
+    --roboto: "Roboto", sans-serif;
+    --text: #8e8e8e;
+    --h1: #333333;
+}
+body{
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text);
+}
+/* common end */
+
+/* navbar start */
+.c_header{
+    padding: 15px 0;
+    /* border: 1px solid black; */
+}
+.c_navbar{}
+.logo{
+   font-family: var(--lato);
+   font-size: 25px;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: var(--h1);
+}
+.menu{}
+.menu ul li a{
+    font-family: var(--lato);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--text) !important;
+    padding: 0 15px !important;
+    border: none;
+    outline: none;
+}
+.menu ul li:hover a{
+    color: black !important;
+}
+.btn_search{
+    padding: 0 0 0 5px;
+    font-size: 20px;
+    border: none;
+    color: var(--text);
+}
+.btn_search:hover i{
+    color: black;
+}
+.search::after{
+    display: none;
+}
+.btn_dropdown{
+    width: 400px;
+    border: none;
+}
+.btn_dropdown[data-bs-popper] {
+    top: 40px;
+    left: -335px;
+}
+.search_btn{
+    background: transparent;
+    font-size: 25px;
+}
+
+/* navbar end */
+
+/* banner start */
+.banner{
+    /* padding: 120px 0; */
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider{
+    padding: 140px 0;
+    color: white;
+}
+.c_h1{
+    padding-bottom: 35px;
+    font-family: var(--lato);
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    text-transform: capitalize;
+}
+.p_text{
+    line-height: 30px;
+}
+.c_btn{
+    margin-top: 45px;
+    padding: 16px 30px;
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0;
+}
+.c_btn:hover{
+    background-color: white;
+    border: 1px solid white;
+    color: var(--h1);
+}
+.c_btn span{
+    margin-left: 16px;
+}
+
+.s_btn {
+    background-color: transparent;
+    color: var(--h1);
+    font-family: var(--lato);
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    transition: 0.3s;
+}
+.s_btn:hover{
+    color: black;
+}
+.bt_icon{
+    display: inline-block;
+}
+.bt_icon span{
+    color: var(--h1);
+}
+/* banner end */
+/* service start */
+/* ----------------------------------service start------------------------ */
+.c_pb{
+    padding-bottom: 100px;
+}
+.c_title{}
+.c_shape{
+    width: 2px;
+    height: 50px;
+    background-color: var(--h1);
+}
+.c_title h1{
+    margin: 10px 0 40px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--h1);
+}
+.c_pera{}
+.c_pera p{
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+
+
+/* item start */
+.c_service{
+    margin: 80px 0 0;
+    padding: 0 15px 35px;
+    border: 2px solid ;
+}
+.c_icon{
+    width: 65px;
+    margin: -22px auto 0;
+    background-color: white;
+}
+.c_icon i{
+    font-size: 60px;
+    color: var(--text);
+}
+.c_h2{
+    margin: 22px 0px 16px;
+    font-family: var(--lato);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--h1);
+}
+.c_line{
+    margin: 0 auto;
+    width: 70px;
+    height: 2px;
+    background-color: var(--text);
+}
+.c_p{
+   margin: 16px 0 32px;
+}
+.c_link{
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--text);
+    text-decoration: none;
+}
+.fIcon{
+    margin-left: 10px;
+}
+/* item hover here */
+.c_service:hover{
+    border-color: var(--h1);
+}
+.c_service:hover .c_icon i{
+    color: var(--h1);
+}
+.c_service:hover .c_link{
+    color: var(--h1);
+}
+
+/* service end */
+
+/* about start */
+.a_img{}
+.a_img img{}
+.a_content{
+    margin: 0 0 0 25px;
+}
+.a_content h2{
+    margin: 0;
+    font-family: var(--lato);
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--h1);
+}
+.a_p1{
+    margin: 30px 0;
+}
+.a_p2{
+    margin-bottom: 40px;
+}
+.a_btn{
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: white;
+    color: var(--text) !important;
+    color: var(--h1);
+    border: 1px solid var(--text); 
+}
+.a_content:hover .cm_btn{
+    border-color: var(--h1);
+    color: var(--h1) !important;
+}
+/* about end */
+
+
+
+
+
+
+
+
+/* portfoli start */
+.portfolio{}
+.p_content{}
+.c_ptabs{}
+.p_img{
+    position: relative;
+    margin: 30px 0 0 0;
+}
+.icon_7{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    background-color: transparent;
+    transition: 0.3s;
+}
+.custom_icon{
+    margin-top: 60px;
+    width: 100%;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+}
+.p_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transition: 0.3s;
+}
+.p_title{
+    padding: 15px 18px;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    background-color: white;
+    transition: 0.3s;
+}
+.p_title h2{
+    font-family: var(--lato);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.p_title p{
+    text-transform: capitalize;
+}
+
+/* hover start portfolio */
+.p_img:hover .p_overlay{
+    opacity: 0.70;
+}
+.p_img:hover .icon_7{
+    opacity: 1;
+}
+.p_img:hover .p_title{
+    opacity: 1;
+}
+
+
+/* portfoli end */
+
+
+
+
+/* why choose us */
+.ch_container{
+    margin: 60px 0 0 0;
+    border-bottom: 1px solid var(--text);
+}
+.icon_div{
+    overflow: hidden;
+}
+.ch_icon{
+    float: left;
+    margin-right: 15px;
+    width: 42px;
+    font-size: 48px;
+}
+.ch_h4{
+    margin-top: 13px;
+    float: left;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.ch_p{
+    padding: 25px 0 30px 0;
+}
+/* hover start */
+.ch_container:hover{
+    border-color: var(--h1);
+}
+.ch_container:hover .icon_div i{
+    color: var(--h1);
+}
+.ch_container:hover .ch_h4{
+    color: var(--h1);
+}
+
+/* why choose us */
+
+
+
+/* work with us start */
+.workus{
+    background-image: url(../images/bg-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.work_img{
+    margin: 50px 0 0;
+    position: relative;
+}
+.work_img img{}
+.work_text{
+    padding: 0 15px;
+    background-color: white;
+}
+.work_text h4{
+    margin: 0;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: var(--h1);
+}
+.work_text h6{
+    margin: 0;
+    padding: 5px 0 15px;
+}
+.social_link{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    background-color: white;
+    opacity: 0;
+    transition: 0.3s;
+}
+.social_link ul{
+    margin: 0;
+    padding: 0;
+}
+.social_link ul li{
+    list-style: none;
+}
+.social_link ul li a{}
+.social_link ul li a i{
+    padding: 9px 12px;
+}
+
+/* hover start */
+.work_img:hover .social_link{
+    opacity: 1;
+}
+.social_link ul li:hover{
+    background-color: var(--h1);
+}
+.social_link ul li:hover i{
+    color: white;
+}
+
+/* work with us end */
+
+
+
+
+
+
+/* pricing start */
+.pricing{}
+.c_price{
+    margin: 80px 0 0;
+    padding: 0 15px 35px;
+    border: 1px solid var(--text);
+}
+.c_h66{
+    margin: -10px 0 0;
+}
+.c_price h6{
+    padding: 10px;
+    display: inline;
+    font-family: var(--lato);
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: white;
+    color: var(--h1);
+}
+.c_price p{
+    margin-top: 22px;
+    padding-left: 22px;
+    text-transform: capitalize;
+}
+.c_price span{
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--h1);
+}
+.c_price ul{
+    padding-left: 22px;
+    list-style: none;
+}
+.c_price ul li{
+    margin-bottom: 16px;
+    text-transform: capitalize;
+}
+.pIcon{
+    margin-left: 9px;
+}
+.pIcon i{
+    font-size: 18px;
+    color: var(--text);
+}
+/* .p_btn{
+    padding: 15px 30px;
+} */
+
+/* hover start */
+.c_price:hover .c_h66{
+    color: var(--h1);
+}
+
+
+/* pricing end */
+
+/* buy now start */
+.buy_cm{
+    margin-bottom: 80px;
+}
+
+.buynow{
+    padding: 30px 0;
+    background-color: #f8f8f8;
+}
+.buy_wrapper{}
+.buy_p{
+    font-family: var(--lato);
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--h1);
+}
+.buy_btn{
+    text-align: end;
+}
+
+/* buy now end */
+
+
+/* info start */
+.c__slider{}
+.info_content{}
+.info_img{}
+.info_img img{}
+.info_content{}
+.info_content h2{
+    font-family: var(--lato);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--h1);
+}
+.info_content h6{
+    margin: 10px 0;
+    font-family: var(--lato);
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--text);
+}
+.info_content h4{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.info_content p{
+    margin-top: 30px;
+    line-height: 32px;
+}
+.info_p1{
+
+}
+.info_p2{
+    
+}
+
+
+/* vertical assign button start */
+.info_btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid var(--text);
+}
+.info_b{
+    font-size: 18px;
+    font-weight: 500;
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    border: none;
+    background: transparent;
+    color: var(--text);
+    transition: 0.3s;
+}
+.info_icon{}
+.info_icon div{
+    margin: 6px 0;
+    width: 23px;
+    height: 2px;
+    background: var(--text);
+}
+.info_icon div:nth-last-child(2){
+    width: 30px;
+}
+
+/* info right button hover start */
+.info_b:hover{
+    color: var(--h1);
+}
+
+/* vertical assign button end */
+
+
+
+/* info start */
+
+/* contact start */
+.c_contact{}
+.cc_contact{
+    
+}
+.border_form{
+    border: 1px solid ;
+}
+.cc_h2{
+    margin-top: -10px;
+    margin-left: -13px;
+    padding: 0 10px;
+    width: 100px;
+    background: white;
+}
+.cc_h2 h2{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: var(--h1);
+}
+.c_form{
+    padding-top: 45px;
+    padding-bottom: 50px;
+}
+.cm_input{
+    border: none;
+    border-bottom: 1px solid var(--text);
+    border-radius: initial;
+    padding: 12px 0;
+}
+.cm_input:focus{
+    color: var(--h1);
+    background-color: transparent;
+    border-color: var(--h1);
+    box-shadow: transparent;
+    box-shadow: none;
+    outline: none;
+}  
+.text_aria:focus{
+    
+}
+
+.text_aria{
+    width: 100%;
+}
+
+
+
+/* contact end */
+
+
+/* footer start */
+.footer{
+    background-image: url(../images/footer_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.f_text{
+    padding-bottom: 30px;
+    color: white;
+}
+.f_links{}
+.f_links a{
+    margin-right: 16px;
+    font-size: 25px;
+    padding: 10px 16px;
+    border: 1px solid white;
+    background: transparent;
+    transition: 0.3s;
+}
+.f_links a:last-child{
+    margin-right: 0;
+}
+.f_links i{
+    color: white;
+    transition: 0.3s;
+}
+/* hover start */
+.f_links a:hover{
+    background-color: white;
+}
+.f_links a:hover i{
+    color: var(--h1);
+}
+
+
+
+/* footer bottom */
+
+.footer_bm{
+    margin-top: 60px;
+    border-top: 1px solid white;
+}
+.f_content{
+    margin-top: 25px;
+}
+.f_left{
+    color: white;
+}
+.f__text{
+
+}
+.f_right{}
+.f_right ul{}
+.f_right ul li{
+    padding-left: 25px;
+    display: inline-block;
+    list-style: none;
+}
+.f_right ul li a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* footer end */
